@@ -8,4 +8,5 @@ class User < ApplicationRecord
          #:recoverable（パスワードをリセット）
          #:rememberable（ログイン情報を保存）
          #:validatable（email のフォーマットなどのバリデーション）
+         has_many :books, dependent: :destroy#アソシエーション=>1:N
 end
