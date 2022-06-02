@@ -5,6 +5,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
     create_table :users do |t|
       ## Database authenticatable
       
+      #名前を保存するカラム
+      t.string :name,               null: false, default: ""
       #メールアドレス
       t.string :email,              null: false, default: ""
       #暗号化されたパスワード
@@ -35,8 +37,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
       
-      #名前を保存するカラム
-      t.string :name
+      
 
 
       t.timestamps null: false
