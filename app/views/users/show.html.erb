@@ -12,7 +12,7 @@
      <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
      
  </head>
- <body>
+<body>
   <header>
      <header class="shadow-sm">
          <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><%#ナビゲーションバーの設定、bgはBackgroundの略#%>
@@ -27,42 +27,42 @@
              
         <% if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to (show_path),  class: 'nav-link text-white' do %><%#users_show_path(current_user.id)#%>
+          <%= link_to user_path(current_user.id),  class: 'nav-link text-white' do %><%#users_show_path(current_user.id)#%>
           <i class="fa-solid fa-house-chimney"></i> Home
           <% end %>
         </li>
         <li class="nav-item">
-          <%= link_to (index_path),  class: 'nav-link text-white' do %><%#users_index_path(current_user.id)#%>
+          <%= link_to users_path,  class: 'nav-link text-white' do %><%#users_index_path(current_user.id)#%>
           <i class="fa-solid fa-users"></i> Users
           <% end %>
         </li>
         <li class="nav-item">
-          <%= link_to (books_index_path),  class: 'nav-link text-white' do %><%#books_index_path(current_user.id)#%>
+          <%= link_to books_path,  class: 'nav-link text-white' do %><%#books_index_path(current_user.id)#%>
           <i class="fa-solid fa-book-open"></i> Books
           <% end %>
         </li>
         <li class="nav-item">
-          <%= link_to (destroy_user_session_path), method: :delete, class: 'nav-link text-white' do %>
+          <%= link_to destroy_user_session_path, method: :delete, class: 'nav-link text-white' do %>
           <i class="fa-solid fa-right-from-bracket"></i> Log out
           <% end %>
         <% else %>
         <li class="nav-item">
-          <%= link_to (root_path), class: 'nav-link text-white' do %>
+          <%= link_to root_path, class: 'nav-link text-white' do %>
           <i class="fa-solid fa-house-chimney"></i> Home
           <% end %>
         </li>
         <li class="nav-item">
-          <%= link_to (about_path), class: 'nav-link text-white' do %>
+          <%= link_to about_path, class: 'nav-link text-white' do %>
           <i class="fa-solid fa-link"></i> About
           <% end %>
         </li>
         <li class="nav-item">
-          <%= link_to (new_user_registration_path), class: 'nav-link text-white' do %>
+          <%= link_to new_user_registration_path, class: 'nav-link text-white' do %>
           <i class="fa-solid fa-user-plus"></i> Sign up
           <% end %>
         </li>
         <li class="nav-item">
-          <%= link_to (new_user_session_path), class: 'nav-link text-white' do %>
+          <%= link_to new_user_session_path, class: 'nav-link text-white' do %>
           <i class="fa-solid fa-right-to-bracket"></i> Log in
           <% end %>
         </li>
@@ -72,10 +72,54 @@
      </div>
    </nav>
   </header>
-
-<h1>HOMEボタンを押すとくる マイページ・ログイン後のトップページ ユーザー一覧のshowリンクからくる</h1>
-
-
-
+  <main>
+    <!--バリデーションエラー用
+    <%# if @book.errors.any? %>
+     <div id="error_explanation">
+       <h4><%#= @book.errors.count %>errors prohibited this obj from being saved:</h4>
+        <ul>
+       <%# @book.errors.full_messages.each do |message| %>
+        <li><%#= message %></li>
+      <%# end %>
+      </ul>
+     </div>
+    <%# end %>-->
+    
+    <!--User info 部分-->
+    <p></p>
+    <div class="container px-5 px-sm-0">
+      <div class="row">
+        <div class="col-md-3">
+        <h2>User info</h2><br>
+        <table class="table">
+        <div style="border-top: solid 0.01px"></div><br>
+        <p><B>name</B></p><br>
+        <div style="border-top: solid 0.01px"><B>introduction</B></div>
+        
+        <p></p>
+        
+        
+          <%= link_to edit_user_path(current_user), class: 'btn btn-default btn-outline-secondary btn-block' do %>
+          <i class="fa-solid fa-user-gear"></i>
+        <% end %>
+        
+        
+        
+        
+        <!-ー投稿フォーム-->
+        <h2>New book</h2>
+        <%= form_with model: @book do |f| %>
+        <h6>Title</h6>
+        <%= f.text_field :title %>
+        <p></p>
+        <h6>Opinion</h6>
+        <%= f.text_area :opinion %>
+        <p></p>
+        <%= f.submit "Create Book" ,class: 'btn btn-success btn-auto' %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </main>
  </body>
 </html>

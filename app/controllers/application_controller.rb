@@ -3,13 +3,13 @@ class ApplicationController < ActionController::Base
   #もし、deviseの処理を行う場合、configure_permitted_parametersというものを実行してね」という意味
   
   def after_sign_in_path_for(resource)#サインイン後にどこに遷移するかを設定しているメソッド
-  show_path#users/showマイページへ
+  user_path(current_user.id)#users/showマイページへ
   end
 
 
   
   def after_sign_out_path_for(resource)#サインアウト後にどこに遷移するかを設定するメソッド
-  top_path#homes/topトップページへ
+  root_path#homes/topトップページへ
   end
 
   protected

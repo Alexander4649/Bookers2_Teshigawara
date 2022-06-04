@@ -17,3 +17,12 @@
 @import 'homes';
 @import 'uesrs';
 
+#error_explanation  {
+  width: 450px;
+  /*height: 123px;*/
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
