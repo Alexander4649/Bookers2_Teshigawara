@@ -72,5 +72,28 @@
      </div>
    </nav>
   </header>
+  <main>
+    <p></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+          <h2>User info</h2>
+             <%= form_with model: @user do |f| %>
+             
+             <h6>Name</h6>
+             <%= f.text_field :name ,class:"w-75"%>
+             <p></p>
+             
+             <h6>Image</h6>
+             <%= f.file_field :image, accept: "image/*" %>
+             <p></p>
+             
+             <h6>Introduction</h6>
+             <%= f.text_area :introduction ,class:"w-75" %>
+             <p></p>
+             <%= f.submit "Update User" ,class: 'btn btn-secondary btn-auto' %>
+             <% end %>
+    
+    
+  </main>
   
-<h1>プロフィール編集画面</h1>

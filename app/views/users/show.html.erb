@@ -92,31 +92,42 @@
         <div class="col-md-3">
         <h2>User info</h2><br>
         <table class="table">
-        <div style="border-top: solid 0.01px"></div><br>
-        <p><B>name</B></p><br>
-        <div style="border-top: solid 0.01px"><B>introduction</B></div>
-        
-        <p></p>
-        
-        
-          <%= link_to edit_user_path(current_user), class: 'btn btn-default btn-outline-secondary btn-block' do %>
-          <i class="fa-solid fa-user-gear"></i>
-        <% end %>
-        
-        
-        
-        
-        <!-ー投稿フォーム-->
-        <h2>New book</h2>
-        <%= form_with model: @book do |f| %>
-        <h6>Title</h6>
-        <%= f.text_field :title %>
-        <p></p>
-        <h6>Opinion</h6>
-        <%= f.text_area :opinion %>
-        <p></p>
-        <%= f.submit "Create Book" ,class: 'btn btn-success btn-auto' %>
-        <% end %>
+          
+          <!-- ユーザーの詳細 -->
+          <div><%= image_tag @user.get_profile_image(100,100) %></div>
+            <div style="border-top: solid 0.1px"></div>
+            <table>
+              <tr>
+              <td></td><td></td><td></td><td></td><td></td><td><B>name</B></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td>
+              <td><B><%= @user.name %></B></td>
+              </tr>
+             </table><br>
+             <div style="border-top: solid 0.01px"></div>
+             <p></p>
+             <table>
+              <tr>
+              <td></td><B>introduction</B><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td>
+              <td><B><%= @user.introduction %></B></td>
+              </tr>
+             </table><br><br>
+             
+             <%= link_to edit_user_path(current_user), class: 'btn btn-default btn-outline-secondary btn-block' do %>
+             <i class="fa-solid fa-user-gear"></i>
+             <% end %><br>
+             
+             <!--投稿フォーム-->
+             
+             <h2>New book</h2>
+             <%= form_with model: @book do |f| %>
+             <h6>Title</h6>
+             <%= f.text_field :title %>
+             <p></p>
+             <h6>Opinion</h6>
+             <%= f.text_area :body %>
+             <p></p>
+             <%= f.submit "Create Book" ,class: 'btn btn-success btn-auto' %>
+             <% end %>
+             
         </div>
       </div>
     </div>

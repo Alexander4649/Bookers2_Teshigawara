@@ -5,5 +5,4 @@ class Book < ApplicationRecord
   
   belongs_to :user#アソシエーション=>N:1
   
-  
 end
