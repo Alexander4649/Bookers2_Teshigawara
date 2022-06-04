@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
-footer {
-  color:red;
-}
+@import 'books';
+@import 'homes';
+@import 'uesrs';
+
