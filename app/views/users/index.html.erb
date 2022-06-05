@@ -70,13 +70,16 @@
                 <th></th>
               </tr>
             </thead>
+            
             <tbody>
                  <tr>
                 <!--User一覧表示部分-->
+                <!--@usersの情報ひとつひとつを|user|に入れ込んでいるので、それを取り出す記述としてuser.get_profile...やuser.nameの記述になる-->
                 <% @users.each do |user| %>
                 <td><%= image_tag user.get_profile_image(100,100) %></td>
                 <td><%= user.name %></td>
                 <td><%= link_to "Show", user_path(user.id) %></td>
+                <!--Showボタンによって特定のUserマイページに遷移する為、識別する為に、(user.id)と記述してあげる-->
                 </tr>
                 <%end%>
                 
