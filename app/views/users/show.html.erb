@@ -144,21 +144,21 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+                 
+                <!--投稿一覧表示部分-->
+                <% @books.each do |book| %>
+                <!--each doは送られてきたデータを繰り返しアウトプットさせる役割があり、一覧系によく使われる-->
+                <tr onmouseover="style.background='#CCCCCC'" onmouseout="style.background='#FFFFFF'">
+                <!--tr〜trまで投稿情報を記載し、このtr部分がeach doによって繰り返し処理されるよという意味-->
+                <td><%= link_to user_path(current_user.id) do %>
+                <%= image_tag @user.get_profile_image(100,100) %>
+                <% end %></td>
                 
-                
-                
-                <td><%#= link_to image_tag("profile_image") ,user_path(current_user.id)%></td>
-                <%#= link_to user_path(current_user.id), do %>
-                <%#= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
-                <%# end %>
-                
-                
-                <%= form_with model: @book do |f| %>
-                <td><%= @book.title %></td>
-                <td><%= @book.body %></td>
+                <td><%= link_to (book.title),book_path %></td>
+                <td><%= book.body %></td>
+                </tr>
                 <%end%>
-              </tr>
+                
             </tbody>
           </table>
          </div>
