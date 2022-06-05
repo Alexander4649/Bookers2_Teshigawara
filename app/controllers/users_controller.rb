@@ -10,9 +10,9 @@ class UsersController < ApplicationController
   
   def index
      @book = Book.new
-     @user = User.find(current_user.id)
-     @users = User.all
-    
+     @user = User.find(current_user.id)#ログイン中のアカウントを見つける
+     @users = User.all#allメソッドでデータベース内のデータ全て取得
+     #@users = User.find(user_id)
   end
   
   def edit
