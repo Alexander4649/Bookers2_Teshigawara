@@ -1,0 +1,26 @@
+<body>
+  <main>
+    <p></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+          <h2>User info</h2>
+             <%= form_with model: @book do |f| %>
+             
+             <h6>Title</h6>
+             <%= f.text_field :title ,class:"w-75"%>
+             <p></p>
+             <h6>Opinion</h6>
+             <%= f.text_area :body ,class:"w-75" %>
+             <p></p>
+             <%= f.submit "Update Book" ,class: 'btn btn-success btn-auto' %>
+             <% end %>
+             <p></p>
+             <p><%= link_to "Show", book_path %> | <%= link_to "Back", books_path %></p>
+             
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>

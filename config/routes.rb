@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   #post "/books" => "users#create"
   #get "/users/edit" => "users#edit", as: "users_edit"
   
-  resources :books, only: [:new, :create, :index, :show] #get 'books/new' #get 'books/index' #get 'books/show'
+  resources :books, only: [:new, :create, :index, :show, :edit, :update] #get 'books/new' #get 'books/index' #get 'books/show'
   resources :users, only: [:index, :show, :edit, :update]#get 'users/index',get 'users/show',get 'users/edit'
   
   
