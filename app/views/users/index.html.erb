@@ -79,7 +79,6 @@
                 <td><%= image_tag user.get_profile_image(100,100) %></td>
                 <td><%= user.name %></td>
                 <td><%= link_to "Show", user_path(user.id) %></td>
-                <!--Showボタンによって特定のUserマイページに遷移する為、識別する為に、(user.id)と記述してあげる-->
                 </tr>
                 <%end%>
                 

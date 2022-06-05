@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  
+  
   def show
     @book = Book.new#新規投稿をする際に空のbookを@bookに代入する=>だから新規投稿をするよとなるコード
     @user = User.find(params[:id])#登録されたUserをuser_idでfindしてあげることで@userに代入してViweにて適用することができる
