@@ -90,27 +90,29 @@
     <div class="container px-5 px-sm-0">
       <div class="row">
         <div class="col-md-3">
-        <h2>User info</h2><br>
-        <table class="table">
-          
+        <h2>User info</h2>
+        
           <!-- ユーザーの詳細 -->
-          <div><%= image_tag @user.get_profile_image(100,100) %></div>
-            <div style="border-top: solid 0.1px"></div>
-            <table>
+          <table class="table">
+            <div><%= image_tag @user.get_profile_image(100,100) %></div>
+            
+            <thead>
               <tr>
-              <td></td><td></td><td></td><td></td><td></td><td><B>name</B></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td>
-              <td><B><%= @user.name %></B></td>
+                <td><B>name</B></td>
+                <td><B><%= @user.name %></B></td>
               </tr>
-             </table><br>
-             <div style="border-top: solid 0.01px"></div>
-             <p></p>
-             <table>
-              <tr>
-              <td></td><B>introduction</B><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td><td><td></td></td></td>
-              <td><B><%= @user.introduction %></B></td>
-              </tr>
-             </table><br><br>
-             
+            </thead>
+            
+             <tbody>
+               <tr>
+                 <td><B>introduction</B></td>
+                 <td><B><%= @user.introduction %></B></td>
+               </tr>
+             </tbody>
+          </table>
+          
+             <!--ユーザー編集ボタン-->
+            
              <%= link_to edit_user_path(current_user), class: 'btn btn-default btn-outline-secondary btn-block' do %>
              <i class="fa-solid fa-user-gear"></i>
              <% end %><br>
@@ -127,8 +129,40 @@
              <p></p>
              <%= f.submit "Create Book" ,class: 'btn btn-success btn-auto' %>
              <% end %>
-             
         </div>
+        
+        <!--ユーザー投稿一覧部分-->
+        
+        <div class="col-md-8 offset-md-1">
+          <h2>Books</h2>
+          <table class ="table">
+            <thead>
+              <tr>
+                <td></td>
+                <th>Title</th>
+                <th>Opinion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+                
+                
+                <td><%#= link_to image_tag("profile_image") ,user_path(current_user.id)%></td>
+                <%#= link_to user_path(current_user.id), do %>
+                <%#= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+                <%# end %>
+                
+                
+                <%= form_with model: @book do |f| %>
+                <td><%= @book.title %></td>
+                <td><%= @book.body %></td>
+                <%end%>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+          
       </div>
     </div>
   </main>
