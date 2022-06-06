@@ -7,6 +7,7 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     @book.user_id = current_user.id#bookモデルに紐づいたuser_idを操作+ログイン中のユーザー情報を取得
     @book.save                  #book(投稿データ)のuser_idを投稿データに今ログイン中のユーザーIDを持たせる
+    flash[:notice] = "You have created book successfully."#bookのcreateフラッシュメッセ
     redirect_to book_path(@book)# bookのshowページへのリンク、@bookにcurrent_user.idが代入されているので、@bookを指定
   end
 
@@ -32,6 +33,7 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
     @book.update(book_params)
+    flash[:notice] = "You have updated book successfully."#bookのeditフラッシュメッセ
     redirect_to book_path
   end
   
