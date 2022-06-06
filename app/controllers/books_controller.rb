@@ -6,9 +6,13 @@ class BooksController < ApplicationController
   def create#投稿データの保存
     @book = Book.new(book_params)
     @book.user_id = current_user.id#bookモデルに紐づいたuser_idを操作+ログイン中のユーザー情報を取得
-    @book.save                  #book(投稿データ)のuser_idを投稿データに今ログイン中のユーザーIDを持たせる
+    
+    if @book.save                  #book(投稿データ)のuser_idを投稿データに今ログイン中のユーザーIDを持たせる
     flash[:notice] = "You have created book successfully."#bookのcreateフラッシュメッセ
     redirect_to book_path(@book)# bookのshowページへのリンク、@bookにcurrent_user.idが代入されているので、@bookを指定
+    else
+    render "show"
+    end
   end
 
   def index

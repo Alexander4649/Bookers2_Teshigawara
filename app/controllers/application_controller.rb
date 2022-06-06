@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
+  
+  before_action :authenticate_user!, except: [:top, :about]#ログインしないとtopとabout以外何もできないよって感じ
+  
   before_action :configure_permitted_parameters, if: :devise_controller?#devise利用の機能（ユーザ登録、ログイン認証など）が使われる前にconfigure_permitted_parametersメソッドが実行されます。
   #もし、deviseの処理を行う場合、configure_permitted_parametersというものを実行してね」という意味
   
