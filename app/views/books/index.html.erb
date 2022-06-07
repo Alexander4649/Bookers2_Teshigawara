@@ -1,7 +1,7 @@
 <body>
 <main>
     <div class="container px-5 px-sm-0">
-    <!--バリデーションエラー用-->
+    <!--新規投稿失敗時のバリデーションエラーメッセージ-->
     <% if @book.errors.any? %>
        <h4><%= @book.errors.count %>errors prohibited this obj from being saved:</h4>
         <ul>
@@ -9,9 +9,8 @@
         <li><%= message %></li>
       <% end %>
       </ul>
-     </div>
     <% end %>
-    
+    </div>
     <!--User info 部分-->
     <p></p>
     <div class="container px-5 px-sm-0">

@@ -39,9 +39,13 @@ class BooksController < ApplicationController
   
   def update
     @book = Book.find(params[:id])
-    @book.update(book_params)
+    
+    if @book.update(book_params)
     flash[:notice] = "You have updated book successfully."#bookのeditフラッシュメッセ
     redirect_to book_path
+    else
+      render "edit"
+    end
   end
   
   def destroy
@@ -60,7 +64,7 @@ class BooksController < ApplicationController
      @user = @book.user#@userに投稿したbookの情報(@book)のユーザー情報を代入
    if
       @user != current_user#bookを投稿したuserと現在ログイン中のユーザーが違う時
-      redirect_to books_path#book＃indexに遷移する
+      redirect_to books_path#book＃indexに遷移する設定
    end
   end
   

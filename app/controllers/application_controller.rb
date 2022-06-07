@@ -8,8 +8,6 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)#サインイン後にどこに遷移するかを設定しているメソッド
   user_path(current_user.id)#users/showマイページへ
   end
-
-
   
   def after_sign_out_path_for(resource)#サインアウト後にどこに遷移するかを設定するメソッド
   root_path#homes/topトップページへ
@@ -17,7 +15,8 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  def configure_permitted_parameters#configure_permitted_parametersメソッドでは、devise_parameter_sanitizer.permitメソッドを使うことでユーザー登録(sign_up)の際に、
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:email])#メールアドレス(email)のデータ操作を許可しています。
+  def 
+    configure_permitted_parameters#configure_permitted_parametersメソッドでは、devise_parameter_sanitizer.permitメソッドを使うことでユーザー登録(sign_up)の際に、
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name,:email])#メールアドレス(email)のデータ操作を許可しています。
   end
 end
