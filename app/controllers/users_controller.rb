@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+  before_action :user_check,only:[:edit,:update]
   
   def show
     @book = Book.new#新規投稿をする際に空のbookを@bookに代入する=>だから新規投稿をするよとなるコード
@@ -15,7 +15,6 @@ class UsersController < ApplicationController
   
   def edit
     @user = User.find(params[:id])
-    
   end
   
   def update
@@ -29,7 +28,13 @@ class UsersController < ApplicationController
   
   def user_params
     params.require(:user).permit(:name,:introduction,:profile_image)
-    
+  end
+  
+  def user_check
+    @user = User.find(params[:id])#@userにユーザー登録情報を代入
+    if @user != current_user#登録ユーザー情報とログイン中のユーザーが違う時
+      redirect_to user_path(current_user)#ログイン中のユーザーのマイページに遷移する
+    end
   end
   
 end

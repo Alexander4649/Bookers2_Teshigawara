@@ -1,4 +1,5 @@
 class Book < ApplicationRecord
+  
   validates :title, presence: true#バリデーション
 	validates :body, presence: true#バリデーション
 	
