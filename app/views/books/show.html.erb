@@ -65,7 +65,9 @@
                 <!--Book詳細部分-->
                 
                 <td>
+                  <%= link_to book_path do %>
                   <%= image_tag @user.get_profile_image(100,100) %><br>
+                  <% end %>
                   <%= link_to @user.name,user_path(@user) %>
                 </td>
                 <td><%= link_to @book_id.title,book_path %></td>

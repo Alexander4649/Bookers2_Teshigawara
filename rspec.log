@@ -19,7 +19,7 @@ Userモデルのテスト
 [32m      2文字以上であること: 2文字は〇[0m
 [32m      20文字以下であること: 20文字は〇[0m
 [32m      20文字以下であること: 21文字は×[0m
-[31m      一意性があること (FAILED - 1)[0m
+[32m      一意性があること[0m
     introductionカラム
 [32m      50文字以下であること: 50文字は〇[0m
 [32m      50文字以下であること: 51文字は×[0m
@@ -30,27 +30,27 @@ Userモデルのテスト
 [STEP1] ユーザログイン前のテスト
   トップ画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 2)[0m
-[31m      Log inリンクが表示される: 青色のボタンの表示が「Log in」である (FAILED - 3)[0m
-[31m      Log inリンクの内容が正しい (FAILED - 4)[0m
-[31m      Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である (FAILED - 5)[0m
-[31m      Sign upリンクの内容が正しい (FAILED - 6)[0m
+[32m      URLが正しい[0m
+[31m      Log inリンクが表示される: 青色のボタンの表示が「Log in」である (FAILED - 1)[0m
+[31m      Log inリンクの内容が正しい (FAILED - 2)[0m
+[31m      Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である (FAILED - 3)[0m
+[31m      Sign upリンクの内容が正しい (FAILED - 4)[0m
   アバウト画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 7)[0m
+[32m      URLが正しい[0m
   ヘッダーのテスト: ログインしていない場合
     表示内容の確認
-[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 8)[0m
-[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 9)[0m
-[31m      Aboutリンクが表示される: 左上から3番目のリンクが「About」である (FAILED - 10)[0m
-[31m      Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である (FAILED - 11)[0m
-[31m      Log inリンクが表示される: 左上から5番目のリンクが「Log in」である (FAILED - 12)[0m
+[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 5)[0m
+[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 6)[0m
+[31m      Aboutリンクが表示される: 左上から3番目のリンクが「About」である (FAILED - 7)[0m
+[31m      Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である (FAILED - 8)[0m
+[31m      Log inリンクが表示される: 左上から5番目のリンクが「Log in」である (FAILED - 9)[0m
     リンクの内容を確認
-[31m      Bookersを押すと、トップ画面に遷移する (FAILED - 13)[0m
-[31m      Homeを押すと、トップ画面に遷移する (FAILED - 14)[0m
-[31m      Aboutを押すと、アバウト画面に遷移する (FAILED - 15)[0m
-[31m      Sign upを押すと、新規登録画面に遷移する (FAILED - 16)[0m
-[31m      Log inを押すと、ログイン画面に遷移する (FAILED - 17)[0m
+[32m      Bookersを押すと、トップ画面に遷移する[0m
+[32m      Homeを押すと、トップ画面に遷移する[0m
+[31m      Aboutを押すと、アバウト画面に遷移する (FAILED - 10)[0m
+[31m      Sign upを押すと、新規登録画面に遷移する (FAILED - 11)[0m
+[31m      Log inを押すと、ログイン画面に遷移する (FAILED - 12)[0m
   ユーザ新規登録のテスト
     表示内容の確認
 [32m      URLが正しい[0m
@@ -77,22 +77,22 @@ Userモデルのテスト
 [32m      ログインに失敗し、ログイン画面にリダイレクトされる[0m
   ヘッダーのテスト: ログインしている場合
     ヘッダーの表示を確認
-[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 18)[0m
-[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 19)[0m
-[31m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である (FAILED - 20)[0m
-[31m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である (FAILED - 21)[0m
-[31m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である (FAILED - 22)[0m
+[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 13)[0m
+[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 14)[0m
+[31m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である (FAILED - 15)[0m
+[31m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である (FAILED - 16)[0m
+[31m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である (FAILED - 17)[0m
   ユーザログアウトのテスト
     ログアウト機能のテスト
-[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 23)[0m
-[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 24)[0m
+[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 18)[0m
+[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 19)[0m
 
 [STEP2] ユーザログイン後のテスト
   ヘッダーのテスト: ログインしている場合
     リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。
-[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 25)[0m
-[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 26)[0m
-[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 27)[0m
+[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 20)[0m
+[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 21)[0m
+[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 22)[0m
   投稿一覧画面のテスト
     表示内容の確認
 [32m      URLが正しい[0m
@@ -140,7 +140,7 @@ Userモデルのテスト
   自分の投稿編集画面のテスト
     表示の確認
 [32m      URLが正しい[0m
-[31m      「Editing Book」と表示される (FAILED - 28)[0m
+[32m      「Editing Book」と表示される[0m
 [32m      title編集フォームが表示される[0m
 [32m      body編集フォームが表示される[0m
 [32m      Update Bookボタンが表示される[0m
@@ -197,7 +197,7 @@ Userモデルのテスト
   サクセスメッセージのテスト
 [32m    ユーザ新規登録成功時[0m
 [32m    ユーザログイン成功時[0m
-[31m    ユーザログアウト成功時 (FAILED - 29)[0m
+[31m    ユーザログアウト成功時 (FAILED - 23)[0m
 [32m    ユーザのプロフィール情報更新成功時[0m
 [32m    投稿データの新規投稿成功時: 投稿一覧画面から行います。[0m
 [32m    投稿データの更新成功時[0m
@@ -246,7 +246,7 @@ Userモデルのテスト
     他人のユーザ詳細画面のテスト
       表示の確認
 [32m        URLが正しい[0m
-[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 30)[0m
+[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 24)[0m
 [32m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい[0m
 [32m        投稿一覧に他人の投稿のopinionが表示される[0m
 [32m        自分の投稿は表示されない[0m
@@ -264,14 +264,14 @@ Userモデルのテスト
 [32m    投稿詳細画面[0m
   アイコンのテスト
     トップ画面
-[31m      本のアイコンが表示される (FAILED - 31)[0m
+[32m      本のアイコンが表示される[0m
     アバウト画面
-[31m      本のアイコンが表示される (FAILED - 32)[0m
+[32m      本のアイコンが表示される[0m
     ヘッダー: ログインしていない場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 33)[0m
-[31m      Aboutリンクのアイコンが表示される (FAILED - 34)[0m
-[31m      Sign upリンクのアイコンが表示される (FAILED - 35)[0m
-[31m      Log inリンクのアイコンが表示される (FAILED - 36)[0m
+[32m      Homeリンクのアイコンが表示される[0m
+[32m      Aboutリンクのアイコンが表示される[0m
+[32m      Sign upリンクのアイコンが表示される[0m
+[32m      Log inリンクのアイコンが表示される[0m
     ヘッダー: ログインしている場合
 [32m      Homeリンクのアイコンが表示される[0m
 [32m      Usersリンクのアイコンが表示される[0m
@@ -285,726 +285,125 @@ Userモデルのテスト
 
 Failures:
 
-  1) Userモデルのテスト バリデーションのテスト nameカラム 一意性があること
-     [31mFailure/Error: is_expected.to eq false[0m
+  1) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である
+     [31mFailure/Error: expect(log_in_link).to match(/Log in/)[0m
      [31m[0m
-     [31m  expected: false[0m
-     [31m       got: true[0m
+     [31m  expected "\n           Sign up\n" to match /Log in/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1,2 +1,3 @@[0m
+     [31m  [0m[31m-/Log in/[0m
+     [31m  [0m[32m+[0m
+     [31m  [0m[32m+           Sign up[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:15:in `block (4 levels) in <main>'[0m
+
+  2) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい
+     [31mFailure/Error: expect(page).to have_link log_in_link, href: new_user_session_path[0m
+     [31m  expected to find link "\n           Sign up\n" with href "/users/sign_in" but there were no matches[0m
+     [36m# ./spec/system/01_before_login_spec.rb:19:in `block (4 levels) in <main>'[0m
+
+  3) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である
+     [31mFailure/Error: expect(sign_up_link).to match(/Sign up/)[0m
      [31m[0m
-     [31m  (compared using ==)[0m
+     [31m  expected "\n           Log in\n" to match /Sign up/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1,2 +1,3 @@[0m
+     [31m  [0m[31m-/Sign up/[0m
+     [31m  [0m[32m+[0m
+     [31m  [0m[32m+           Log in[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:23:in `block (4 levels) in <main>'[0m
+
+  4) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクの内容が正しい
+     [31mFailure/Error: expect(page).to have_link sign_up_link, href: new_user_registration_path[0m
+     [31m  expected to find link "\n           Log in\n" with href "/users/sign_up" but there were no matches[0m
+     [36m# ./spec/system/01_before_login_spec.rb:27:in `block (4 levels) in <main>'[0m
+
+  5) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
+     [31mFailure/Error: expect(home_link).to match(/Bookers/)[0m
      [31m[0m
+     [31m  expected "" to match /Bookers/[0m
      [31m  Diff:[0m[0m
      [31m  [0m[34m@@ -1 +1 @@[0m
-     [31m  [0m[31m-false[0m
-     [31m  [0m[32m+true[0m
+     [31m  [0m[31m-/Bookers/[0m
+     [31m  [0m[32m+""[0m
      [31m  [0m[0m
-     [36m# ./spec/models/user_spec.rb:33:in `block (4 levels) in <main>'[0m
+     [36m# ./spec/system/01_before_login_spec.rb:52:in `block (4 levels) in <main>'[0m
 
-  2) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 URLが正しい
-     [31mFailure/Error: visit root_path[0m
+  6) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
+     [31mFailure/Error: expect(home_link).to match(/Home/)[0m
      [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:6:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+     [31m  expected "" to match /Home/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1 +1 @@[0m
+     [31m  [0m[31m-/Home/[0m
+     [31m  [0m[32m+""[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:56:in `block (4 levels) in <main>'[0m
 
-  3) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である
-     [31mFailure/Error: visit root_path[0m
+  7) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Aboutリンクが表示される: 左上から3番目のリンクが「About」である
+     [31mFailure/Error: expect(about_link).to match(/About/)[0m
      [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:6:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+     [31m  expected "Bookers" to match /About/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1 +1 @@[0m
+     [31m  [0m[31m-/About/[0m
+     [31m  [0m[32m+"Bookers"[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:60:in `block (4 levels) in <main>'[0m
 
-  4) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい
-     [31mFailure/Error: visit root_path[0m
+  8) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である
+     [31mFailure/Error: expect(signup_link).to match(/Sign up/)[0m
      [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:6:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+     [31m  expected "\n           Home\n" to match /Sign up/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1,2 +1,3 @@[0m
+     [31m  [0m[31m-/Sign up/[0m
+     [31m  [0m[32m+[0m
+     [31m  [0m[32m+           Home[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:64:in `block (4 levels) in <main>'[0m
 
-  5) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である
-     [31mFailure/Error: visit root_path[0m
+  9) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Log inリンクが表示される: 左上から5番目のリンクが「Log in」である
+     [31mFailure/Error: expect(login_link).to match(/Log in/)[0m
      [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:6:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+     [31m  expected "\n           About\n" to match /Log in/[0m
+     [31m  Diff:[0m[0m
+     [31m  [0m[34m@@ -1,2 +1,3 @@[0m
+     [31m  [0m[31m-/Log in/[0m
+     [31m  [0m[32m+[0m
+     [31m  [0m[32m+           About[0m
+     [31m  [0m[0m
+     [36m# ./spec/system/01_before_login_spec.rb:68:in `block (4 levels) in <main>'[0m
 
-  6) [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクの内容が正しい
-     [31mFailure/Error: visit root_path[0m
-     [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:6:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  7) [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい
-     [31mFailure/Error: visit '/home/about'[0m
-     [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:34:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  8) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
-     [31mFailure/Error: visit root_path[0m
-     [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  9) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
-     [31mFailure/Error: visit root_path[0m
-     [31m[0m
-     [31mActionController::RoutingError:[0m
-     [31m  uninitialized constant HomeController[0m
-     [31m  Did you mean?  HomesController[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-     [36m# ------------------[0m
-     [36m# --- Caused by: ---[0m
-     [36m# NameError:[0m
-     [36m#   uninitialized constant HomeController[0m
-     [36m#   Did you mean?  HomesController[0m
-     [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  10) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Aboutリンクが表示される: 左上から3番目のリンクが「About」である
-      [31mFailure/Error: visit root_path[0m
+  10) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/home/about'[0m
       [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  11) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である
-      [31mFailure/Error: visit root_path[0m
+      [31m  expected: "/home/about"[0m
+      [31m       got: "/"[0m
       [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:93:in `block (4 levels) in <main>'[0m
 
-  12) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Log inリンクが表示される: 左上から5番目のリンクが「Log in」である
-      [31mFailure/Error: visit root_path[0m
+  11) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Sign upを押すと、新規登録画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/users/sign_up'[0m
       [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  13) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Bookersを押すと、トップ画面に遷移する
-      [31mFailure/Error: visit root_path[0m
+      [31m  expected: "/users/sign_up"[0m
+      [31m       got: "/"[0m
       [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:99:in `block (4 levels) in <main>'[0m
 
-  14) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Homeを押すと、トップ画面に遷移する
-      [31mFailure/Error: visit root_path[0m
+  12) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Log inを押すと、ログイン画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/users/sign_in'[0m
       [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  15) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する
-      [31mFailure/Error: visit root_path[0m
+      [31m  expected: "/users/sign_in"[0m
+      [31m       got: "/home/about"[0m
       [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/01_before_login_spec.rb:105:in `block (4 levels) in <main>'[0m
 
-  16) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Sign upを押すと、新規登録画面に遷移する
-      [31mFailure/Error: visit root_path[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  17) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Log inを押すと、ログイン画面に遷移する
-      [31mFailure/Error: visit root_path[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:46:in `block (3 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  18) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
+  13) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
       [31mFailure/Error: expect(home_link).to match(/Bookers/)[0m
       [31m[0m
       [31m  expected "" to match /Bookers/[0m
@@ -1015,7 +414,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:223:in `block (4 levels) in <main>'[0m
 
-  19) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
+  14) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
       [31mFailure/Error: expect(home_link).to match(/Home/)[0m
       [31m[0m
       [31m  expected "" to match /Home/[0m
@@ -1026,7 +425,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:227:in `block (4 levels) in <main>'[0m
 
-  20) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である
+  15) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である
       [31mFailure/Error: expect(users_link).to match(/Users/)[0m
       [31m[0m
       [31m  expected "Bookers" to match /Users/[0m
@@ -1037,7 +436,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:231:in `block (4 levels) in <main>'[0m
 
-  21) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である
+  16) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である
       [31mFailure/Error: expect(books_link).to match(/Books/)[0m
       [31m[0m
       [31m  expected "\n           Home\n" to match /Books/[0m
@@ -1049,7 +448,7 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:235:in `block (4 levels) in <main>'[0m
 
-  22) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である
+  17) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である
       [31mFailure/Error: expect(logout_link).to match(/Log out/)[0m
       [31m[0m
       [31m  expected "\n           Users\n" to match /Log out/[0m
@@ -1061,12 +460,12 @@ Failures:
       [31m  [0m[0m
       [36m# ./spec/system/01_before_login_spec.rb:239:in `block (4 levels) in <main>'[0m
 
-  23) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
+  18) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
       [31mFailure/Error: expect(page).to have_link '', href: '/home/about'[0m
       [31m  expected to find link "" with href "/home/about" but there were no matches[0m
       [36m# ./spec/system/01_before_login_spec.rb:259:in `block (4 levels) in <main>'[0m
 
-  24) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
+  19) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
       [31mFailure/Error: expect(current_path).to eq '/'[0m
       [31m[0m
       [31m  expected: "/"[0m
@@ -1075,7 +474,7 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/01_before_login_spec.rb:262:in `block (4 levels) in <main>'[0m
 
-  25) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
+  20) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
       [31mFailure/Error: click_link home_link[0m
       [31m[0m
       [31mCapybara::Ambiguous:[0m
@@ -1089,59 +488,16 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:23:in `block (4 levels) in <main>'[0m
 
-  26) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
-      [31mFailure/Error: click_link users_link[0m
+  21) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
+      [31mFailure/Error: is_expected.to eq '/users'[0m
       [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:42:in `follow'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/node.rb:249:in `follow_link'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/node.rb:72:in `click'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/node.rb:144:in `block (2 levels) in <class:Node>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/element.rb:172:in `block in click'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/element.rb:597:in `block in perform_click_action'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/element.rb:597:in `perform_click_action'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/element.rb:171:in `click'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/node/actions.rb:42:in `click_link'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:778:in `block (2 levels) in <class:Session>'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/02_after_login_spec.rb:29:in `block (4 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+      [31m  expected: "/users"[0m
+      [31m       got: "/"[0m
+      [31m[0m
+      [31m  (compared using ==)[0m
+      [36m# ./spec/system/02_after_login_spec.rb:30:in `block (4 levels) in <main>'[0m
 
-  27) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
+  22) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
       [31mFailure/Error: is_expected.to eq '/books'[0m
       [31m[0m
       [31m  expected: "/books"[0m
@@ -1150,304 +506,30 @@ Failures:
       [31m  (compared using ==)[0m
       [36m# ./spec/system/02_after_login_spec.rb:36:in `block (4 levels) in <main>'[0m
 
-  28) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
-      [31mFailure/Error: expect(page).to have_content 'Editing Book'[0m
-      [31m  expected to find text "Editing Book" in "Bookers\nHome Users Books Log out\nUser info\nTitle\nOpinion\n6r38p4bbdavfcmth75yz\nShow | Back\nCopyRight Infratop.inc"[0m
-      [36m# ./spec/system/02_after_login_spec.rb:217:in `block (4 levels) in <main>'[0m
-
-  29) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
+  23) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nname gkl1364zzu introduction ne0pddnogp9c1e2zilzc\nNew book\nTitle\nOpinion\nUsers\nimage name ifrkksy5wn Show gkl1364zzu Show\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\nHome Users Books Log out\nUser info\nname ww88u9lzcm introduction k45mg07gcz263sxnutpf\nNew book\nTitle\nOpinion\nUsers\nimage name um93t8wrg8 Show ww88u9lzcm Show\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:36:in `block (3 levels) in <main>'[0m
 
-  30) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  24) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link '', href: user_path(other_user)[0m
       [31m  expected to find link "" with href "/users/1" but there were no matches[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:277:in `block (5 levels) in <main>'[0m
 
-  31) [STEP3] 仕上げのテスト アイコンのテスト トップ画面 本のアイコンが表示される
-      [31mFailure/Error: visit root_path[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:354:in `block (4 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  32) [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される
-      [31mFailure/Error: visit '/home/about'[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:366:in `block (4 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  33) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される
-      [31mFailure/Error: visit root_path[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:378:in `block (4 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  34) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Aboutリンクのアイコンが表示される
-      [31mFailure/Error: visit root_path[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:378:in `block (4 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  35) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Sign upリンクのアイコンが表示される
-      [31mFailure/Error: visit root_path[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:378:in `block (4 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-  36) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Log inリンクのアイコンが表示される
-      [31mFailure/Error: visit root_path[0m
-      [31m[0m
-      [31mActionController::RoutingError:[0m
-      [31m  uninitialized constant HomeController[0m
-      [31m  Did you mean?  HomesController[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/tempfile_reaper.rb:15:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/etag.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/conditional_get.rb:27:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/head.rb:12:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:266:in `context'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/session/abstract/id.rb:260:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:37:in `call_app'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/rack/logger.rb:26:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/method_override.rb:24:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/runtime.rb:22:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/sendfile.rb:110:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/railties-6.1.6/lib/rails/engine.rb:539:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:74:in `block in call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `each'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/urlmap.rb:58:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-2.2.3.1/lib/rack/builder.rb:244:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/mock_session.rb:29:in `request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:266:in `process_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:129:in `custom_request'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/rack-test-1.1.0/lib/rack/test.rb:58:in `get'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:72:in `process'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:47:in `process_and_follow_redirects'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/browser.rb:24:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/session.rb:278:in `visit'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.36.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:378:in `block (4 levels) in <main>'[0m
-      [36m# ------------------[0m
-      [36m# --- Caused by: ---[0m
-      [36m# NameError:[0m
-      [36m#   uninitialized constant HomeController[0m
-      [36m#   Did you mean?  HomesController[0m
-      [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
-
-Finished in 26.53 seconds (files took 1.31 seconds to load)
-[31m199 examples, 36 failures[0m
+Finished in 24.67 seconds (files took 1.41 seconds to load)
+[31m199 examples, 24 failures[0m
 
 Failed examples:
 
-[31mrspec ./spec/models/user_spec.rb:31[0m [36m# Userモデルのテスト バリデーションのテスト nameカラム 一意性があること[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:10[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:13[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクが表示される: 青色のボタンの表示が「Log in」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:17[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Log inリンクの内容が正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:21[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクが表示される: 緑色のボタンの表示が「Sign up」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:25[0m [36m# [STEP1] ユーザログイン前のテスト トップ画面のテスト 表示内容の確認 Sign upリンクの内容が正しい[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:38[0m [36m# [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:50[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:54[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:58[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Aboutリンクが表示される: 左上から3番目のリンクが「About」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:62[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Sign upリンクが表示される: 左上から4番目のリンクが「Sign up」である[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:66[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 表示内容の確認 Log inリンクが表示される: 左上から5番目のリンクが「Log in」である[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:75[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Bookersを押すと、トップ画面に遷移する[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:82[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Homeを押すと、トップ画面に遷移する[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:89[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:95[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Sign upを押すと、新規登録画面に遷移する[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:101[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Log inを押すと、ログイン画面に遷移する[0m
@@ -1461,13 +543,6 @@ Failed examples:
 [31mrspec ./spec/system/02_after_login_spec.rb:20[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:26[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:32[0m [36m# [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する[0m
-[31mrspec ./spec/system/02_after_login_spec.rb:216[0m [36m# [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:28[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:276[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:357[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト トップ画面 本のアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:369[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:381[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:384[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Aboutリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:387[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Sign upリンクのアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:390[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Log inリンクのアイコンが表示される[0m
 

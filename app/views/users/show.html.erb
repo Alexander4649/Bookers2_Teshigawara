@@ -69,7 +69,7 @@
                 <!--each doは送られてきたデータを繰り返しアウトプットさせる役割があり、一覧系によく使われる-->
                 <tr onmouseover="style.background='#CCCCCC'" onmouseout="style.background='#FFFFFF'">
                 <!--tr〜trまで投稿情報を記載し、このtr部分がeach doによって繰り返し処理されるよという意味-->
-                <td><%= link_to user_path(current_user.id) do %>
+                <td><%= link_to user_path do %>
                 <%= image_tag @user.get_profile_image(100,100) %>
                 <% end %></td>
                 
